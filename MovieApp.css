@@ -1,0 +1,84 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8vh;
+    padding: 5vh 0vh;
+    width: 83%;
+    margin: auto;
+}
+#container>div{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 1vh;
+    border-radius: 2px;
+
+}
+#container>div>img{
+    width: 100%;
+    
+}
+#container>div>h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#topSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 1vh 10%;
+    margin-bottom: 0%;
+}
+#topSection>input{
+    padding: 1vh;
+}
+#topSection>h1{
+    
+    color: rgb(255, 21, 0);
+    
+}
+body{
+    background-color: rgb(251, 246, 239);
+}
+#myImage{
+    width: 100%;
+   border-radius: 10px;
+
+}
+.myImage{
+    width: 30%;
+    margin: auto;
+}
+#tag{
+    background-color: green;
+    color: white;
+    width: fit-content;
+    padding: 5px;
+    margin-top: 0%;
+    border-radius: 3px;
+    
+}
+#container>div {
+   
+    position: relative;
+  }
+  #tag{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #tag {
+    z-index: 10;
+  }
+
+  @media screen and (max-width:600px){
+    #container{
+        
+        grid-template-columns: repeat(2,1fr);
+        gap: 4vh;
+        padding: 3vh 0vh;
+        width: 90%;
+        
+    }
+  }
